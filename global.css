@@ -2,7 +2,7 @@
 
 body {
     margin: 0px;
-    font-family: 'Fira Sans' Arial, Helvetica, sans-serif;
+    font-family: 'Fira Sans';
     color: #141414;
     margin-bottom: 1000px;
 }
@@ -20,4 +20,21 @@ ul {
 img {
     max-width: 100%;
     display: block;
+}
+
+.subtitulo {
+    font-size: 8rem;
+    line-height: 1;
+    word-break: break-all;
+    text-transform: uppercase;
+    max-width: 4ch;
+
+}
+
+@media (max-width: 800px) {
+    .subtitulo {
+        font-size: 3rem;
+        text-transform: capitalize;
+        max-width: inherit;
+    }
 }
