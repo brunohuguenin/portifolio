@@ -1,5 +1,6 @@
 .footer {
     background-color: black;
+    width: 100%;
 }
 
 .footer-conteiner {
@@ -17,7 +18,7 @@
     color: #cccc;
 }
 
-.footer-contato {
+.footer-contato li {
     font-weight: bold;
     font-size: 2.25rem;
     line-height: 1.1;
@@ -30,8 +31,24 @@
     color: white;
 }
 
+.footer-contato li a:hover {
+    color: #67dd0a;
+    transition: .6s;
+}
+
 .footer-copy {
     grid-column: 1 / -1;
     font-size: 1.25rem;
     color: #8f8f8f;
+}
+
+@media (max-width: 800px) {
+    .footer-conteiner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-contato {
+        font-size: 1.5rem;
+    }
 }
